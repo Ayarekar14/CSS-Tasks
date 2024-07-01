@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Border Table with Full Block</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Remove borders between 3rd column and other columns */
+        td:nth-child(3) {
+            border-left: none;
+            border-right: none;
+        }
+
+        /* Make the third column a full block */
+        .full-block {
+            display: block;
+            border: 2px solid black;
+            padding: 8px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <div class="full-block">
+
+                <td rowspan="2">Full Block Content</td>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

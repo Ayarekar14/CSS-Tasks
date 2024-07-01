@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+}
+
+aside {
+    background-color: lightseagreen;
+    color: black;
+    width: 50%;
+}

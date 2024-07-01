@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Adv Background Images</title>
+    <style>
+        body {
+            /* background-color: violet;
+            background-image: url(assets/Images/37864.jpg);
+            background-size: 100% 100vh; */
+        }
+
+        div {
+            height: 120px;
+            width: 150px;
+            border: solid;
+            /* background-image: url(assets/Images/img_tree.png),url(assets/Images/sample.jpg),url(assets/Images/download.jpg);
+            background-repeat: no-repeat, no-repeat,repeat;
+            background-position: right bottom , left bottom ,left top; */
+
+            /* background-image: url(assets/Images/sample.jpg);
+            background-repeat: no-repeat; */
+            /*background-size: 500px 400px; */
+            /*Horizontal Vertical*/
+        }
+
+        .one {
+            height: 120px;
+            width: 150px;
+            border: solid red;
+            background-image: url(assets/Images/img_tree.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .two {
+            height: 120px;
+            width: 150px;
+            border: solid green;
+            background-image: url(assets/Images/img_tree.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .origin {
+            height: 300px;
+            border: solid 10px #ff0000;
+            width: 300px;
+            background-image: url(assets/Images/img_tree.png);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+
+        .clip {
+            height: 300px;
+            border: dotted 15px;
+            padding: 5px;
+            width: 300px;
+            background-color: violet;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Multiple Background Images</h1>
+    <div class="one">
+    </div>
+    <br>
+    <div class="two">
+    </div>
+    <br><br>
+    <div class="origin">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, accusantium quaerat quisquam iusto est
+            saepe asperiores quia. Qui et asperiores sint beatae nesciunt? Pariatur distinctio delectus obcaecati est
+            dolorum ullam.</p>
+    </div>
+    <br>
+    <div class="clip">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime exercitationem ea repellat nostrum sint neque
+            harum omnis veritatis delectus, provident ducimus dicta ut. Rerum impedit delectus voluptatum quo magni
+            quam.</p>
+    </div>
+
+</body>
+
+</html>

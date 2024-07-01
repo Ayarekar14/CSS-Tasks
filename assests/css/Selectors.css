@@ -1,0 +1,39 @@
+/*Simple Selectors */
+
+/* Universal Selector */
+* {
+    margin: 5px;
+}
+
+/* Element Based  NAME selector */
+body {
+    background-color: thistle;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+/* Class Selector */
+.myClass {
+    background-color: lightsalmon;
+    color: black;
+
+}
+
+/* ID Selector */
+#myId {
+    width: 50%;
+    background-color: turquoise;
+    margin: auto;
+}
+
+/* Grouping Selectors */
+section,
+article,
+aside,
+.footercontent {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    background-color: lightskyblue;
+}
